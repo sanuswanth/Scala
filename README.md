@@ -4,10 +4,10 @@ the page visited and a user cookie. Page views made by the same user share the s
 cookie. Each event has been assigned a UUID.
 
 The file has the following fields, in order:
-# event_id => A UUID for each event
-# collector_tstamp =>Time stamp for the event recorded by the collector
-# domain_userid => User ID set in a long-lived browser cookie
-# page_urlpath => Path to page
+##### event_id => A UUID for each event
+##### collector_tstamp =>Time stamp for the event recorded by the collector
+##### domain_userid => User ID set in a long-lived browser cookie
+##### page_urlpath => Path to page
 
 Data Transformation
 Goal is to transform the dataset of individual page view events into a collection of linked
@@ -22,8 +22,8 @@ list, you must add the ID of each event (as a foreign key) to the event that dir
 Therefore, your transformation will ultimately add a single field to the original dataset. Write the
 transformed dataset to a CSV file with the following fields, in order:
 
-event_id => A UUID for each event
-collector_tstamp => Time stamp for the event recorded by the collector
-domain_userid => User ID set in a long-lived browser cookie
-page_urlpath => Path to page
-next_event_id => The UUID of the next event for the same user (may be null)
+##### event_id => A UUID for each event
+##### collector_tstamp => Time stamp for the event recorded by the collector
+##### domain_userid => User ID set in a long-lived browser cookie
+##### page_urlpath => Path to page
+##### next_event_id => The UUID of the next event for the same user (may be null)
