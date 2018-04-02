@@ -1,5 +1,6 @@
-# In this Scala code set ,we will be analyzing an application's user retention as we compute the number of users that
-# user the application for a number of consecutive days.
+# application's user retention using Scala
+In this Scala code set ,we will be analyzing an application's user retention as we compute the number of users that
+user the application for a number of consecutive days.
 The provided CSV file documents user activity for the application. Each line in the file indicates the time of
 activity and the user associated with the activity. Determine how addictive the application is by computing how
 many consecutive days users that started using the application on a given day ended up using it for. In this
@@ -16,15 +17,15 @@ The program should take one command line argument which is the path to the CSV f
 The sample data provided covers the time range 1/1/2016 to 1/14/2016. The time in seconds from start of
 epoch to 1/1/2016 00:00:00 is 1451606400.
 Input file format
-● CSV
-● a timestamp and user ID pair on each line
-● each line ends with a &#39;\n&#39;
-● the timestamp is field 1 and the user ID is field 2
-● timestamp is 32-­bit int, indicating the number of seconds from start of epoch (1/1/1970 00:00)
+- CSV
+- a timestamp and user ID pair on each line
+- each line ends with a &#39;\n&#39;
+- the timestamp is field 1 and the user ID is field 2
+- timestamp is 32-­bit int, indicating the number of seconds from start of epoch (1/1/1970 00:00)
 relative to UTC
-● user ID is 64­-bit int
-● the data in the file is sorted in ascending order of timestamps
+- user ID is 64­-bit int
+- the data in the file is sorted in ascending order of timestamps
 Some things that may simplify the implementation
-● You do not need to handle malformed input data. You can assume that all the data in the input is
+- You do not need to handle malformed input data. You can assume that all the data in the input is
 consistent with the format specified above.
-● You do not need to handle invalid paths passed as the arg to the program
+- You do not need to handle invalid paths passed as the arg to the program
